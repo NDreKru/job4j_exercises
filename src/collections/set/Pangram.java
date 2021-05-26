@@ -1,4 +1,4 @@
-package collections;
+package collections.set;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
