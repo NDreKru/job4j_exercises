@@ -1,6 +1,5 @@
 package collections.map;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
@@ -12,8 +11,7 @@ public class PutIfAbsent {
     }
 
     public boolean addNewElement(User u) {
-        User rsl = users.putIfAbsent(u.getId(), u);
-        return rsl == null;
+        return users.putIfAbsent(u.getId(), u) == null;
     }
 
     public static class User {
